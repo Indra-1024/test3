@@ -74,11 +74,18 @@
         
 
         /* task8 */
-        .box{
-            height: 100px;
-            width: 100px;
-            background-color: black;
+      
+
+        /* The box to animate */
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            position: absolute;
+            animation: slide 2s linear infinite;
         }
+
+        /* Keyframes for sliding animation */
         @keyframes slide {
             0% { left: 0px; }
             100% { left: 300px; }
