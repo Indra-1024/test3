@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* task1 */
+        ul li a{
+            color: blue;
+        }
+        ul li a:hover{
+            color: red;
+        }
+        ul li a:active{
+            color: green;
+        }
+        
+        /* task2 */
+        h1{
+            font-style: arial;
+        }
+
+        /* task3 */
+        .card{
+            border: 1px solid gray;
+            /* padding: 20px; */
+            margin: 10px;
+            max-width: 300px;
+            padding-right: 20px;
+        }
+
+        /* task4 */
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+
+        /* task5 */
+       
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;   
+            gap: 10px; 
+        }
+        @media (max-width:600px){
+            .gallery{
+                display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr ; 
+            }
+        }
+
+        /* task6 */
+        button{
+            color: white;
+            background-color: blue;
+        }
+        button:hover{
+            background-color: darkblue;
+            transition: backgroung-color 0.3 ease;
+        }
+
+        /* task7 */
+        .transform:hover{
+            height: 50px;
+            width: 150px;
+            transform:  scale(1.2) rotate(90deg) ;
+            border-radius: 100px;
+        }
+        
+
+        /* task8 */
+      
+
+        /* The box to animate */
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            position: absolute;
+            animation: slide 2s linear infinite;
+        }
+
+        /* Keyframes for sliding animation */
+        @keyframes slide {
+            0% { left: 0px; }
+            100% { left: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- task1 -->
+    <!-- ul with li and anchor tags -->
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Virat_Kohli">Virat</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Rohit_Sharma">Rohit</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/MS_Dhoni">Dhoni</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/AB_de_Villiers">ABD</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Bhuvneshwar_Kumar">Bhuvi</a></li>
+    </ul><br><br>
+
+    <!-- task2 -->
+     <div hight="100vh" class="webpage">
+        <h1>Virat kohli</h1>
+        <p>Virat Kohli is well known as king of cricket, Run machine, Chase master etc</p>
+     </div><br><br>
+
+    <!-- task3 -->
+     <div class="card">
+        Virat Kohli is well known as king of cricket, Run machine, Chase master etc
+     </div>
+
+     <nav>
+            <li><a href="https://en.wikipedia.org/wiki/Virat_Kohli">Virat</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Rohit_Sharma">Rohit</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/MS_Dhoni">Dhoni</a></li>
+     </nav><br><br>
+
+     <!-- task5 -->
+      <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3G6rOw-vHUsPCc2tXj8Fe4bnhBRVkvLWPng&s" alt="virat">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3G6rOw-vHUsPCc2tXj8Fe4bnhBRVkvLWPng&s" alt="virat">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3G6rOw-vHUsPCc2tXj8Fe4bnhBRVkvLWPng&s" alt="virat">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3G6rOw-vHUsPCc2tXj8Fe4bnhBRVkvLWPng&s" alt="virat">
+     </div><br><br>
+
+     <!-- task6 -->
+    <button>
+        Virat Kohli
+    </button><br><br>
+
+
+    <!-- task7 -->
+     <div class="transform">
+    <button>
+        Hover Me
+    </button>
+    </div><br><br>
+
+    <!-- task8 -->
+     <div class="box">
+        box
+     </div>
+</body>
+</html>
